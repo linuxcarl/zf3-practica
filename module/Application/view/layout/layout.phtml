@@ -6,10 +6,24 @@
         <?= $this->headTitle('ZF Skeleton Application')->setSeparator(' - ')->setAutoEscape(false) ?>
 
         <?= $this->headMeta()
-            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
             ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+            ->appendHttpEquiv('Accept-Encoding', 'gzip, deflate')
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+            ->appendName('Content-Language', 'es-ES')
+            ->appendName('Language', 'ES')
+            ->appendName('application-name','pruebas')
+            ->appendName('Description', 'Sistema practical ')
+            ->appendName('robots', 'noindex, nofollow')
+            ->appendName('googlebot', 'noindex, nofollow')
+            ->appendName('author', 'carlos@extrasistemas.com')
+            ->appendName('url', 'http://extrasistemas.com')
+            ->appendName('identifier-URL', 'http://www.extrasistemas.com')
+            ->appendName('copyright', 'CARLOS')
+            ->appendName('date', '2020-05-13')
+            ->appendName('revised', '2020-05-13')
+            ->appendName('generator', 'Zend Framework 3')
+            ->appendName('Classification', 'Business')
         ?>
-
         <!-- Le styles -->
         <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
             ->prependStylesheet($this->basePath('css/style.css'))
@@ -19,7 +33,7 @@
         <!-- Scripts -->
         <?= $this->inlineScript()
             ->prependFile($this->basePath('js/bootstrap.min.js'))
-            ->prependFile($this->basePath('js/jquery-3.3.1.min.js'))
+            ->prependFile($this->basePath('js/jquery-3.5.1.min.js'))
         ?>
     </head>
     <body>
