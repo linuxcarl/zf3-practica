@@ -14,6 +14,16 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
+            'catalogo' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/catalogo[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\CatalogoController::class,
+                        'action'     => 'lista',
+                    ],
+                ],
+            ],
             'home' => [
                 'type'    => Literal::class,
                 'options' => [
@@ -39,6 +49,7 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
+            Controller\CatalogoController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [
