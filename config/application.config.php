@@ -13,7 +13,7 @@ return [
     'module_listener_options' => [
         
          // use composer autoloader instead of zend-loader
-        'use_zend_loader' => false,
+        'use_zend_loader' => true,
         
         // An array of paths from which to glob configuration files after
         // modules are loaded. These effectively override configuration
