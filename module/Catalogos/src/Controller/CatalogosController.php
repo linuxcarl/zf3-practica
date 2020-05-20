@@ -1,0 +1,25 @@
+<?php 
+
+namespace Catalogos\Controller;
+
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+
+class CatalogosController extends AbstractActionController
+{
+    public function indexAction()
+    {
+    }
+
+    public function addAction()
+    {
+    }
+
+    public function editAction()
+    {
+    }
+
+    public function deleteAction()
+    {
+    }
+}
